@@ -1,0 +1,25 @@
+.badge{
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  border-radius: 7px;
+  text-transform: uppercase;
+
+  &--red{
+    color: $color-danger;
+    background-color: $color-danger-light;
+  }
+
+  &--yellow{
+    color: $color-warning;
+    background-color: $color-warning-light;
+  }
+
+  &--green{
+    color: $color-success;
+    background-color: $color-success-light;
+    
+  }
+}
