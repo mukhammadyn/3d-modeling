@@ -11,6 +11,7 @@
         "../scss/blocks/_blocks.scss",
         "../scss/blocks/_visually-hidden.scss",
         "../scss/blocks/_container.scss",
+        "../scss/blocks/_badge.scss"
         "../scss/blocks/_site-header.scss",
         "../scss/blocks/_site-nav.scss",
         "../scss/blocks/_site-logo.scss"
