@@ -1,4 +1,4 @@
-.site-nav{
+.site-nav {
   display: flex;
   align-items: center;
 }
@@ -12,11 +12,11 @@
 .site-nav__item {
   border-bottom: 2px solid transparent;
   
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-right: 16px;
   }
   
-  &:hover{
+  &:hover {
     background-color: #F3F8FB;
     border-bottom: 2px solid $color-brand;
   }
@@ -35,26 +35,26 @@
   color: $color-secondary;
   text-decoration: none;
 
-  &:hover .site-nav__icon{
+  &:hover .site-nav__icon {
     color: rgba(25, 125, 181, 1);
   }
 }
 
-.site-nav__icon{
+.site-nav__icon {
   margin-right: 6px;
 }
 
-.site-nav__notification{
+.site-nav__notification {
   position: relative;
   margin-right: 40px;
   color: $color-secondary;
 
-  &:hover .site-nav__icon{
+  &:hover .site-nav__icon {
     color: $color-brand;
   }
 }
 
-.site-nav__notification-counter{
+.site-nav__notification-counter {
   position: absolute;
   top: -7px;
   right: 0px;
@@ -71,11 +71,11 @@
   border-radius: 50%;
 }
 
-.site-nav__avatar{
+.site-nav__avatar {
   opacity: 1;
   transition: 0.4s ease opacity;
 
-  &:hover{
+  &:hover {
     opacity: 0.8;
   }
 }

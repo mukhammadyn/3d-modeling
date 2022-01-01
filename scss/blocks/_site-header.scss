@@ -1,9 +1,9 @@
-.site-header{
+.site-header {
   background-color: $color-white;
   box-shadow: 0px 2px 4px #E9E9E9;
 }
 
-.site-header__container{
+.site-header__container {
   @include flex-row;  
   justify-content: space-between;
 }
