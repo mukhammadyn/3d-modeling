@@ -1,0 +1,24 @@
+.tasks-section {
+  padding-top: 36px;
+  padding-bottom: 54px;
+}
+
+.tasks-section__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.tasks-section__heading {
+  margin: 0;
+  margin-right: 16px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.tasks-section__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

@@ -1,0 +1,33 @@
+.empty-box {
+  display: none;
+  align-items: center;
+  padding: 35px 104px 65px 46px;
+  background-color: #F5F5F5;
+  box-shadow: inset 0px 4px 8px 2px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+}
+
+.empty-box--visible {
+  display: flex;
+}
+
+.empty-box__img {
+  margin-right: 49px;
+}
+
+.empty-box__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: $color-text;
+}
+
+.empty-box__desc {
+  max-width: 457px;
+  margin: 0;
+  font-size: 22px;
+  line-height: 32px;
+  color: $color-secondary;
+}

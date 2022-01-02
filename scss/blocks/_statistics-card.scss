@@ -1,0 +1,21 @@
+.statistics-card {
+  padding: 16px 24px;
+  background-color: $color-white;
+  box-shadow: 0px 2px 4px #E9E9E9;
+  border-radius: 4px;
+}
+
+.statistics-card__heading {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: $color-secondary;
+}
+
+.statistics-card__count {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: $color-green;
+}
