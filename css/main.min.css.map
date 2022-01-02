@@ -12,6 +12,8 @@
         "../scss/blocks/_visually-hidden.scss",
         "../scss/blocks/_container.scss",
         "../scss/blocks/_model-upload-card.scss"
+        "../scss/blocks/_model-card.scss",
+        "../scss/blocks/_file-drop.scss"
     ],
     "names": [],
     "file": "main.min.css"
