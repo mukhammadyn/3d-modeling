@@ -1,0 +1,49 @@
+.file-drop {
+  max-width: 352px;
+}
+
+.file-drop__input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  padding: 24px 20px 24px 16px;
+  border: 2px dashed #B8B8B8;
+  border-radius: 4px;
+}
+
+.file-drop__icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 10px;
+  background-color: $color-success-light;
+  border-radius: 50%;
+}
+
+.file-drop__desc {
+  margin: 0;
+  max-width: 225px;
+  color: $color-secondary;
+}
+
+.file-drop__info {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-dark-grey;
+
+  &::before {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-right: 4px;
+    background-image: url(../img/icon/info-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+  }
+}
