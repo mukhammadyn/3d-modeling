@@ -1,0 +1,22 @@
+.status {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.status--unfulfilled {
+  color: $color-danger;
+}
+
+.status--canceled {
+  color: $color-dark-grey;
+}
+
+.status--checking {
+  color: $color-warning;
+}
+
+.status--complated {
+  color: $color-success;
+}

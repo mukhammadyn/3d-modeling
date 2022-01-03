@@ -61,7 +61,7 @@
           <div class="site-nav__drop-main">
             <header class="site-nav__drop-header">
               <img class="site-nav__drop-header-img" src="img/avatar.png" alt="avatar" width="48" height="48"
-                srcset="img/avatar.png 1x, img/avatar@2x.png 2x">
+              srcset="img/avatar.png 1x, img/avatar@2x.png 2x">
               <div class="site-nav__drop-header-content">
                 <h3 class="site-nav__drop-header-heading">Jaloliddin Esonboyev</h3>
                 <div class="site-nav__drop-rating-wrapper">
@@ -73,23 +73,13 @@
             <ul class="site-nav__drop-list">
               <li class="site-nav__drop-item">
                 <a class="site-nav__drop-link" href="/">
-                  <span class="site-nav__drop-link-icon"><svg width="20" height="20" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M3.333 18.333a6.667 6.667 0 1 1 13.333 0H15a5 5 0 0 0-10 0H3.333Zm6.667-7.5c-2.763 0-5-2.237-5-5 0-2.762 2.237-5 5-5 2.762 0 5 2.238 5 5 0 2.763-2.238 5-5 5Zm0-1.666A3.332 3.332 0 1 0 10 2.5a3.332 3.332 0 1 0 0 6.667Z"
-                        fill="#414141" />
-                    </svg></span>
+                  <span class="site-nav__drop-link-icon"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.333 18.333a6.667 6.667 0 1 1 13.333 0H15a5 5 0 0 0-10 0H3.333Zm6.667-7.5c-2.763 0-5-2.237-5-5 0-2.762 2.237-5 5-5 2.762 0 5 2.238 5 5 0 2.763-2.238 5-5 5Zm0-1.666A3.332 3.332 0 1 0 10 2.5a3.332 3.332 0 1 0 0 6.667Z" fill="#414141"/></svg></span>
                   <span class="site-nav__drop-link-desc">Mening profilim</span>
                 </a>
               </li>
               <li class="site-nav__drop-item">
                 <a class="site-nav__drop-link" href="/">
-                  <span class="site-nav__drop-link-icon"><svg width="20" height="20" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M15 5.833h2.5a.833.833 0 0 1 .834.834v10a.833.833 0 0 1-.834.833h-15a.833.833 0 0 1-.833-.833V3.333A.833.833 0 0 1 2.5 2.5H15v3.333ZM3.334 7.5v8.333h13.333V7.5H3.334Zm0-3.333v1.666h10V4.167h-10Zm9.166 6.666H15V12.5h-2.5v-1.667Z"
-                        fill="#414141" />
-                    </svg></span>
+                  <span class="site-nav__drop-link-icon"><svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 5.833h2.5a.833.833 0 0 1 .834.834v10a.833.833 0 0 1-.834.833h-15a.833.833 0 0 1-.833-.833V3.333A.833.833 0 0 1 2.5 2.5H15v3.333ZM3.334 7.5v8.333h13.333V7.5H3.334Zm0-3.333v1.666h10V4.167h-10Zm9.166 6.666H15V12.5h-2.5v-1.667Z" fill="#414141"/></svg></span>
                   <span class="site-nav__drop-link-desc">Daromad tarixi</span>
                 </a>
               </li>
@@ -101,6 +91,223 @@
   </header>
 
   <main class="site-main">
+
+
+    <section class="tasks-section">
+      <h1 class="visually-hidden">Vazifalar</h1>
+      <div class="tasks-section__container container">
+        <header class="tasks-section__header">
+          <p class="tasks-section__heading">Vazifalar</p>
+
+          <div class="tasks-section__filter filter-select filter-select--bigger">
+            <!-- add to class "filter-select--open" for open dropdown"-->
+            <button class="filter-select__selected">
+              <span class="filter-select__selected-inner">Bugun</span>
+            </button>
+            <div class="filter-select__options">
+              <div class="filter-select__option">Bugun</div>
+              <div class="filter-select__option">Shu hafta</div>
+              <div class="filter-select__option">Shu oy</div>
+              <div class="filter-select__option">Shu yil</div>
+              <div class="filter-select__option">Barcha vaqt</div>
+            </div>
+          </div>
+        </header>
+        <div class="tasks-section__content">
+          <!-- if tasks empty -->
+          <div class="tasks-section__empty-box empty-box"> <!--add class "empty-box--visible" for visible this section-->
+            <img class="empty-box__img" src="img/beedroid.png" srcset="img/beedroid.png 2x" alt="" width="320" height="320">
+            <div class="empty-box__content">
+              <p class="empty-box__heading">Vazifalar yo'q</p>
+              <p class="empty-box__desc">O’zingizga kerakli vazifalarni tanlab olish uchun olish uchun bosh sahifga qayting</p>
+            </div>
+          </div>
+
+          <div class="tasks-section__table table">
+            <header class="table__header">
+              <ul class="table__header-list">
+                <li class="table__header-item">
+                  <a class="table__header-link route-link route-link--active" href="/">
+                    <span class="route-link__text">Barchasi</span>
+                    <sup class="route-link__badge">10</sup>
+                  </a>
+                </li>
+                <li class="table__header-item">
+                  <a class="table__header-link route-link" href="/">
+                    <span class="route-link__text">Bajarilmagan</span>
+                    <sup class="route-link__badge">4</sup>
+                  </a>
+                </li>
+                <li class="table__header-item">
+                  <a class="table__header-link route-link" href="/">
+                    <span class="route-link__text">Bekor qilingan</span>
+                    <sup class="route-link__badge">1</sup>
+                  </a>
+                </li>
+                <li class="table__header-item">
+                  <a class="table__header-link route-link" href="/">
+                    <span class="route-link__text">Tekshirilmoqda</span>
+                    <sup class="route-link__badge">2</sup>
+                  </a>
+                </li>
+                <li class="table__header-item">
+                  <a class="table__header-link route-link" href="/">
+                    <span class="route-link__text">Bajarildi</span>
+                    <sup class="route-link__badge">108</sup>
+                  </a>
+                </li>
+              </ul>
+            </header>
+            <table class="table__table">
+              <thead class="table__head">
+                <tr>
+                  <th class="table__head table__head--img">Rasm</th>
+                  <th class="table__head table__head--model-type">model turi</th>
+                  <th class="table__head table__head--id">id</th>
+                  <th class="table__head table__head--receipt-date">olingan sana</th>
+                  <th class="table__head table__head--deadline">deadline</th>
+                  <th class="table__head table__head--uzs">narx uzs</th>
+                  <th class="table__head table__head--status">status</th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr>
+                  <td><img src="img/chair.png" alt="chair" width="36" height="36"></td>
+                  <td>Armchair</td>
+                  <td>#123456</td>
+                  <td>08:51, 18 Dekabr</td>
+                  <td>16:00, 22 Dekabr</td>
+                  <td>25 000</td>
+                  <td><span class="status status--unfulfilled">Bajarilmagan</span></td>
+                </tr>
+                <tr>
+                  <td><img src="img/chair.png" alt="chair" width="36" height="36"></td>
+                  <td>Sofa</td>
+                  <td>#123456</td>
+                  <td>08:51, 18 Dekabr</td>
+                  <td>16:00, 22 Dekabr</td>
+                  <td>25 000</td>
+                  <td><span class="status status--canceled">Bekor qilingan</span></td>
+                </tr>
+                <tr>
+                  <td><img src="img/chair.png" alt="chair" width="36" height="36"></td>
+                  <td>Armchair</td>
+                  <td>#123456</td>
+                  <td>08:51, 18 Dekabr</td>
+                  <td>16:00, 22 Dekabr</td>
+                  <td>25 000</td>
+                  <td><span class="status status--unfulfilled">Bajarilmagan</span></td>
+                </tr>
+                <tr>
+                  <td><img src="img/chair.png" alt="chair" width="36" height="36"></td>
+                  <td>Armchair</td>
+                  <td>#123456</td>
+                  <td>08:51, 18 Dekabr</td>
+                  <td>16:00, 22 Dekabr</td>
+                  <td>25 000</td>
+                  <td><span class="status status--unfulfilled">Bajarilmagan</span></td>
+                </tr>
+                <tr>
+                  <td><img src="img/chair.png" alt="chair" width="36" height="36"></td>
+                  <td>Armchair</td>
+                  <td>#123456</td>
+                  <td>08:51, 18 Dekabr</td>
+                  <td>16:00, 22 Dekabr</td>
+                  <td>25 000</td>
+                  <td><span class="status status--checking">Tekshirilmoqda</span></td>
+                </tr>
+                <tr>
+                  <td><img src="img/chair.png" alt="chair" width="36" height="36"></td>
+                  <td>Armchair</td>
+                  <td>#123456</td>
+                  <td>08:51, 18 Dekabr</td>
+                  <td>16:00, 22 Dekabr</td>
+                  <td>25 000</td>
+                  <td><span class="status status--unfulfilled">Bajarilmagan</span></td>
+                </tr>
+                <tr>
+                  <td><img src="img/chair.png" alt="chair" width="36" height="36"></td>
+                  <td>Armchair</td>
+                  <td>#123456</td>
+                  <td>08:51, 18 Dekabr</td>
+                  <td>16:00, 22 Dekabr</td>
+                  <td>25 000</td>
+                  <td><span class="status status--complated">Bajarildi</span></td>
+                </tr>
+                <tr>
+                  <td><img src="img/chair.png" alt="chair" width="36" height="36"></td>
+                  <td>Armchair</td>
+                  <td>#123456</td>
+                  <td>08:51, 18 Dekabr</td>
+                  <td>16:00, 22 Dekabr</td>
+                  <td>25 000</td>
+                  <td><span class="status status--checking">Tekshirilmoqda</span></td>
+                </tr>
+                <tr>
+                  <td><img src="img/chair.png" alt="chair" width="36" height="36"></td>
+                  <td>Armchair</td>
+                  <td>#123456</td>
+                  <td>08:51, 18 Dekabr</td>
+                  <td>16:00, 22 Dekabr</td>
+                  <td>25 000</td>
+                  <td><span class="status status--complated">Bajarildi</span></td>
+                </tr>
+                <tr>
+                  <td><img src="img/chair.png" alt="chair" width="36" height="36"></td>
+                  <td>Armchair</td>
+                  <td>#123456</td>
+                  <td>08:51, 18 Dekabr</td>
+                  <td>16:00, 22 Dekabr</td>
+                  <td>25 000</td>
+                  <td><span class="status status--complated">Bajarildi</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tasks-section__statistics statistics">
+            <header class="statistics__header">
+              <h2 class="statistics__heading">Statistika</h2>
+              <div class="statistics__filter filter-select filter-select--small"><!-- add to class "filter-select--open" for open dropdown"-->
+                <button class="filter-select__selected">
+                  <span class="filter-select__selected-inner">Shu hafta</span>
+                </button>
+                <div class="filter-select__options">
+                  <div class="filter-select__option">Bugun</div>
+                  <div class="filter-select__option">Shu hafta</div>
+                  <div class="filter-select__option">Shu oy</div>
+                  <div class="filter-select__option">Shu yil</div>
+                  <div class="filter-select__option">Barcha vaqt</div>
+                </div>
+              </div>
+            </header>
+  
+            <ul class="statistics__list">
+              <li class="statistics__item">
+                <div class="statistics-card">
+                  <h3 class="statistics-card__heading">Modellar yasaldi</h3>
+                  <strong class="statistics-card__count">14</strong>
+                </div>
+              </li>
+              <li class="statistics__item">
+                <div class="statistics-card">
+                  <h3 class="statistics-card__heading">Reyting ko’tarildi</h3>
+                  <strong class="statistics-card__count">57</strong>
+                </div>
+              </li>
+              <li class="statistics__item">
+                <div class="statistics-card">
+                  <h3 class="statistics-card__heading">Daromad (UZS)</h3>
+                  <strong class="statistics-card__count">125 000</strong>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
     
   </main>
 
@@ -202,6 +409,9 @@
       <p class="file-drop__info">Fayl zip formatida bo’lib 100 MBdan oshmasligi kerak</p>
     </div>
   </div>
+
+  </main>
+
 </body>
 
 </html>

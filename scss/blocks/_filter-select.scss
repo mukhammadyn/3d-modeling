@@ -1,0 +1,100 @@
+.filter-select {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.filter-select--bigger {
+  min-width: 117px;
+}
+
+.filter-select__selected {
+  width: 100%;
+  padding: 6px 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-select--open
+.filter-select__selected {
+  border-bottom: 2px solid $color-disabled;
+}
+
+.filter-select__selected-inner {
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  color: $color-text;
+
+  &::after {
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+    background-image: url(../img/icon/select-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: rotate 0.2s ease;
+    content: '';
+  }
+}
+
+.filter-select--open
+.filter-select__selected-inner {
+
+  &::after {
+    transform: rotate(180deg);
+  }
+}
+
+.filter-select--bigger
+.filter-select__selected-inner {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.filter-select--small
+.filter-select__selected-inner {
+  font-size: 16px;
+  line-height: 20px;
+
+  &::after {
+    background-size: 20px;
+  }
+}
+
+.filter-select__options {
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  background-color: $color-white;
+  box-shadow: 0px 6px 12px $color-disabled;
+}
+
+.filter-select--open
+.filter-select__options {
+  display: block;
+}
+
+.filter-select__option {
+  padding: 10px;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-secondary;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-primary;
+    background-color: $color-badge-bg;
+  }
+}
+
+.filter-select--small
+.filter-select__option {
+  font-size: 16px;
+  line-height: 20px;
+}
