@@ -84,7 +84,13 @@
   position: relative;
 }
 
+.site-nav__drop--open
 .site-nav__drop-main {
+  display: block; /* ADD THIS STYLE FOR TOGGLE DROPDOWN */
+}
+
+.site-nav__drop-main {
+  display: none; /* ADD THIS STYLE */
   width: 280px;
   position: absolute;
   z-index: 1;
@@ -175,8 +181,3 @@
 .site-nav__drop-link-icon {
   margin-right: 11px;
 }
-
-.site-nav__drop-link-desc {
-
-}
-
