@@ -1,0 +1,32 @@
+.statistics {
+  max-width: 240px;
+}
+
+.statistics__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 6px 16px;
+  background-color: $color-white;
+  box-shadow: 0px 2px 4px #E9E9E9;
+  border-radius: 4px;
+}
+
+.statistics__heading {
+  margin: 0;
+  margin-right: 16px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.statistics__list {
+  @include list-unstyled;
+}
+
+.statistics__item {
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
