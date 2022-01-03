@@ -9,7 +9,61 @@
 </head>
 
 <body>
-  <h1>This is merged from test branch</h1>
+  <!-- TODO pasdagi birinchi div ochirib tashlanishi kerak (container va parent) -->
+  <div class="fixed-notification-parent">
+    <div class="fixed-notification">
+      <div class="fixed-notification__top">
+        <h2 class="fixed-notification__title">Bildirishnomalar</h2>
+      </div>
+
+      <ul class="fixed-notification__notifications">
+        <li class="fixed-notification__notification fixed-notification__notification--accepted fixed-notification__notification--unread">
+          <div class="fixed-notification__content">
+            <p class="fixed-notification__name">Sizning <a class="fixed-notification__link" href="#">#123456</a> raqamli modelingiz qabul qilindi</p>
+            <p class="fixed-notification__comment"></p>
+            <img class="fixed-notification__img" src="img/notification1.png" alt="armchair" width="40" height="40" srcset="img/notification1.png 1x, img/notification1@2x.png 2x">
+            <span class="fixed-notification__time">2 soat oldin</span>
+          </div>
+        </li>
+
+        <li class="fixed-notification__notification fixed-notification__notification--accepted fixed-notification__notification--unread">
+          <div class="fixed-notification__content">
+            <p class="fixed-notification__name">Sizning <a class="fixed-notification__link" href="#">#123456</a> raqamli modelingiz qabul qilindi</p>
+            <p class="fixed-notification__comment"></p>
+            <img class="fixed-notification__img" src="img/notification-2.png" alt="armchair" width="40" height="40" srcset="img/notification-2.png 1x, img/notification-2@2x.png 2x">
+            <span class="fixed-notification__time">2 soat oldin</span>
+          </div>
+        </li>
+
+        <li class="fixed-notification__notification fixed-notification__notification--warning">
+          <div class="fixed-notification__content">
+            <p class="fixed-notification__name">Sizning <a class="fixed-notification__link" href="#">#123456</a> raqamli modelingizga izoh berildi</p>
+            <p class="fixed-notification__comment">Armachairni oyog’i kalta bo’lib qolgan, ref bilan bir xil emas! </p>
+            <img class="fixed-notification__img" src="img/notification1.png" alt="armchair" width="40" height="40" srcset="img/notification1.png 1x, img/notification1@2x.png 2x">
+            <span class="fixed-notification__time">2 soat oldin</span>
+          </div>
+        </li>
+
+        <li class="fixed-notification__notification fixed-notification__notification--accepted">
+          <div class="fixed-notification__content">
+            <p class="fixed-notification__name">Sizning <a class="fixed-notification__link" href="#">#123456</a> raqamli modelingiz qabul qilindi</p>
+            <p class="fixed-notification__comment"></p>
+            <img class="fixed-notification__img" src="img/notification4.png" alt="armchair" width="40" height="40" srcset="img/notification4.png 1x, img/notification4@2x.png 2x">
+            <span class="fixed-notification__time">2 soat oldin</span>
+          </div>
+        </li>
+
+        <li class="fixed-notification__notification fixed-notification__notification--declined">
+          <div class="fixed-notification__content">
+            <p class="fixed-notification__name">Sizning <a class="fixed-notification__link" href="#">#123456</a> raqamli modelingiz bekor qilindi</p>
+            <p class="fixed-notification__comment"></p>
+            <img class="fixed-notification__img" src="img/notification5.png" alt="sofa" width="40" height="40" srcset="img/notification5.png 1x, img/notification5@2x.png 2x">
+            <span class="fixed-notification__time">2 soat oldin</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,137 @@
+.fixed-notification-parent {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fixed-notification {
+  background-color: #0000;
+}
+
+.fixed-notification__top {
+  margin-bottom: 2px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  padding-left: 40px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px #E9E9E9;
+  z-index: 2;
+}
+
+.fixed-notification__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  color: #111111;
+  text-align: left
+}
+
+.fixed-notification__notifications {
+  @include list-unstyled;
+  @include flex-column;
+  height: 85vh;
+  background-color: #F5F5F5;
+  overflow: auto;
+  z-index: 1;
+}
+
+.fixed-notification__notification {
+  @include flex-row;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  padding: 20px 24px 20px 24px;
+  background-color: #FCFCFC;
+
+  &:hover {
+    background-color: #fff;
+  }
+  
+  &::before {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    margin-right: 12px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--unread::after{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    width: 6px;
+    height: 6px;
+    background-color: #DA1515;
+    border-radius: 50%;
+    content: "";
+  }
+  
+  &--accepted::before {
+    padding: 10px;
+    background-color: #E8F6E8;
+    background-image: url("../../img/checked.svg");
+    background-size: 16px 16px;
+  }
+
+
+  &--warning::before {
+    background-color: #FCF9E6;
+    background-image: url("../../img/icon-warning.svg");
+  }
+
+  &--declined::before {
+    background-color: #F5F5F5;
+    background-image: url("../../img/icon-declined.svg");
+  }
+}
+
+.fixed-notification__content {
+  @include flex-column;
+  align-items: flex-start;
+}
+
+.fixed-notification__name {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #292929;
+}
+
+.fixed-notification__comment {
+  width: 90%;
+  margin: 0;
+  padding-left: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #414141;
+  border-left: 4px solid #E7E7E7;
+}
+
+.fixed-notification__link {
+  color: $color-brand;
+  text-decoration: none;
+}
+
+.fixed-notification__img {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.fixed-notification__time {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #888888;
+}
