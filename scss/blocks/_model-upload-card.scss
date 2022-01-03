@@ -64,7 +64,7 @@
 
 .model-upload-card__info-item {
   width: calc(100% / 2 - 16px);
-  padding: 12px 20px 12px 16px;
+  padding: 12px 16px;
   flex-grow: 1;
   background-color: #FCFCFC;
   border: 1px solid $color-disabled;
@@ -78,10 +78,6 @@
 
   &:nth-child(2n) {
     margin-right: 0;
-  }
-
-  &:last-child{
-    padding: 29px 16px 48px;
   }
 }
 

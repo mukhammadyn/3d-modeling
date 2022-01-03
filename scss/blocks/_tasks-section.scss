@@ -19,7 +19,6 @@
 
 .tasks-section__content {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -40,4 +39,12 @@
 .tasks-section__content--empty
 .tasks-section__empty-box {
   display: flex;
+}
+
+.tasks-section__table {
+  margin-right: 24px;
+}
+
+.tasks-section__statistics {
+  flex-grow: 1;
 }
