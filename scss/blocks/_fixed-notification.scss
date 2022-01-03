@@ -4,7 +4,8 @@
 }
 
 .fixed-notification {
-  background-color: #0000;
+  position: relative;
+  background-color: $color-white;
 }
 
 .fixed-notification__top {
@@ -12,9 +13,26 @@
   padding-top: 32px;
   padding-bottom: 24px;
   padding-left: 40px;
-  background-color: #fff;
+  background-color: $color-white;
   box-shadow: 0px 2px 4px #E9E9E9;
   z-index: 2;
+}
+
+.fixed-notification__close-btn {
+  position: absolute;
+  top: 20px;
+  left: -70px;
+  width: 56px;
+  height: 56px;
+  padding: 13px;
+  background-color: $color-white;
+  background-image: url("../../img/close-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .fixed-notification__title {
@@ -22,8 +40,8 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 40px;
-  color: #111111;
-  text-align: left
+  color: $color-primary;
+  text-align: left;
 }
 
 .fixed-notification__notifications {
@@ -44,7 +62,7 @@
   background-color: #FCFCFC;
 
   &:hover {
-    background-color: #fff;
+    background-color: $color-white;
   }
   
   &::before {
@@ -60,27 +78,27 @@
     content: "";
   }
 
-  &--unread::after{
+  &--unread::after {
     position: absolute;
     top: 70px;
     left: 40px;
     width: 6px;
     height: 6px;
-    background-color: #DA1515;
+    background-color: $color-danger;
     border-radius: 50%;
     content: "";
   }
   
   &--accepted::before {
     padding: 10px;
-    background-color: #E8F6E8;
+    background-color: $color-success-light;
     background-image: url("../../img/checked.svg");
     background-size: 16px 16px;
   }
 
 
   &--warning::before {
-    background-color: #FCF9E6;
+    background-color: $color-warning-light;
     background-image: url("../../img/icon-warning.svg");
   }
 
@@ -111,7 +129,7 @@
   line-height: 20px;
   letter-spacing: 0.5px;
   color: #414141;
-  border-left: 4px solid #E7E7E7;
+  border-left: 4px solid $color-disabled;
 }
 
 .fixed-notification__link {
@@ -133,5 +151,5 @@
   line-height: 16px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #888888;
+  color: $color-light-grey;
 }
