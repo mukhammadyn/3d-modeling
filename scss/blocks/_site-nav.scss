@@ -47,7 +47,11 @@
 .site-nav__notification {
   position: relative;
   margin-right: 40px;
+  padding: 0;
+  background-color: transparent;
   color: $color-secondary;
+  border: none;
+  cursor: pointer;
 
   &:hover .site-nav__icon {
     color: $color-brand;
@@ -72,8 +76,12 @@
 }
 
 .site-nav__avatar {
+  padding: 0;
+  background-color: transparent;
+  border: none;
   opacity: 1;
   transition: 0.4s ease opacity;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.8;
