@@ -1,0 +1,145 @@
+.uploads-archive-wrapper {
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.uploads-archive {
+  background-color: #FCFCFC;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.uploads-archive-top {
+  padding: 16px 16px 12px;
+  background-color: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.uploads-archive__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #111111;
+}
+
+.uploads-archive__list {
+  @include list-unstyled;
+  @include flex-column;
+  align-items: unset;
+  padding: 17px;
+  height: 354px;
+  overflow: auto;
+}
+
+.uploads-archive__item {
+  position: relative;
+  width: 256px;
+  margin-bottom: 16px;
+  padding: 8px;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+
+  &:first-child {
+    margin-top: auto;
+  }
+}
+
+.uploads-archive__item--send {
+  margin-left: auto;
+}
+
+.uploads-archive__item--received {
+  margin-right: auto;
+
+  & .uploads-archive__item-name {
+    margin-bottom: 0;
+
+    &::before {
+      background-image: url("../../img/checked-icon.svg");
+    }
+  }
+
+  & .uploads-archive__item__file {
+    display: none;
+  }
+}
+
+.uploads-archive__time {
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #888888;
+}
+
+.uploads-archive__item--received .uploads-archive__time {
+  right: -40px;
+}
+
+.uploads-archive__item-name {
+  @include flex-row;
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #111111;
+
+  &::before{
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 6px;
+    background-image: url("../../img/file-upload-fill.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+  }
+}
+
+.uploads-archive__item__file {
+  @include flex-row;
+  margin: 0;
+  margin-left: 26px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #414141;
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 6px;
+    background-image: url("../../img/file-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+  }
+}
+
+.uploads-archive__list::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+.uploads-archive__list::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+ 
+.uploads-archive__list::-webkit-scrollbar-thumb {
+  background-color: #E7E7E7;
+  border-radius: 10px;
+}
