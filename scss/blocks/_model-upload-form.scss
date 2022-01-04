@@ -1,0 +1,50 @@
+.model-upload-form-wrapper{
+  width: 400px;
+}
+
+.model-upload-form {
+  padding: 32px 24px;
+  background-color: $color-white;
+  box-shadow: 0px 2px 4px #E9E9E9;
+  border-radius: 4px;
+}
+
+.model-upload-form__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: $color-primary;
+}
+
+.model-upload-form__notification {
+  margin-top: 14px;
+  background-color: #FEFCF2;
+  border: 1px solid $color-warning-light;
+  border-radius: 4px;
+}
+
+.model-upload-form__notification-txt{
+  @include flex-row;
+  align-items: flex-start;
+  margin: 0;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: $color-primary;
+
+  &::before{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: block;
+    flex-shrink: 0;
+    background-image: url("../../img/icon-information.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+}
