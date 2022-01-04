@@ -4,9 +4,10 @@
 
 .file-downloader{
   @include flex-row;
+  justify-content: space-between;
   padding: 8px 12px;
-  background-color: #FFFFFF;
-  border: 1px solid #E7E7E7;
+  background-color: $color-white;
+  border: 1px solid $color-disabled;
   box-sizing: border-box;
   border-radius: 4px;
 
@@ -23,9 +24,9 @@
 
 .file-downloader__info {
   @include flex-column;
+  flex-grow: 1;
   align-items: flex-start;
-  margin-right: 62px;
-
+  padding-right: 20px;
 }
 
 .file-downloader__name {
@@ -33,21 +34,21 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.5px;
-  color: #111111;
+  color: $color-primary;
 }
 
 .file-downloader__size {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.5px;
-  color: #888888;
+  color: $color-light-grey;
 }
 
 .file-downloader__link {
   width: 32px;
   height: 32px;
   padding: 8px;
-  background: #F3F8FB;
+  background: $color-brand-lighter;
   border-radius: 4px;
   background-image: url("../../img/download-icon.svg");
   background-repeat: no-repeat;
