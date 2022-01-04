@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+  <main class="login-main site-main">
+
+    <header class="login-header">
+      <div class="login-header__container container">
+        <img class="login-header__logo" src="img/icon/logo-icon.svg" alt="" width="131" height="48">
+      </div>
+    </header>
+
+    <section class="login-section">
+      <div class="login-section__container container">
+        <h1 class="visually-hidden">Yamo 3D modellari</h1>
+        <div class="login-modal">
+          <div class="login-modal__dialog">
+            <strong class="login-modal__heading">Telefon raqamingizni kriting</strong>
+            <form class="login-modal__form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="login-modal__form-tel-control">
+                <label class="login-modal__label-text" for="telephone">Telefon raqam</label>
+                <input class="login-modal__form-tel" id="telephone" type="tel" aria-label="Telefon raqamingizni kiriting" name="tel" pattern="/(?:\+[9]{2}[8][0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2})/g" placeholder="+998">
+              </div>
+              <label class="login-modal__form-label">
+                <input class="login-modal__form-conditions-check visually-hidden" type="checkbox" name="is_agree">
+                <span class="login-modal__form-custom-checkbox"></span>
+                <p class="login-modal__form-text">Platformaning barcha <a class="login-modal__form-link login-modal__link" href="#">shartlariga</a> roziman</p>
+              </label>
+              <button class="login-modal__form-submit" type="submit">Kodni qabul qilish</button> <!-- BUTTON DISABLED BO'LMASA SHU KLASS QO'SHILADI "login-modal__form-submit--chipper"-->
+            </form>
+          </div>
+        </div>
+
+
+        <div style="margin: 10px 0; font-size: 20px; font-weight: 600;">MODAL 2</div>
+
+
+        <div class="login-modal">
+          <div class="login-modal__dialog">
+            <strong class="login-modal__heading">Kodni kiriting</strong>
+            <div class="login-modal__top-content">
+              <p class="login-modal__tel-content"><span class="login-modal__telephone">+998 99 827 43 96</span> raqamiga SMS-kod yuborildi</p>
+              <a class="login-modal__change-number login-modal__link" href="#">Raqami o’zgartirish</a>
+            </div>
+            <form class="login-modal__form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="login-modal__form-control-wrapper">
+                <input class="login-modal__form-control" type="number" aria-label="code 1" name="code_1">
+                <input class="login-modal__form-control" type="number" aria-label="code 2" name="code_2">
+                <input class="login-modal__form-control" type="number" aria-label="code 3" name="code_3">
+                <input class="login-modal__form-control" type="number" aria-label="code 4" name="code_4">
+              </div>
+              <div class="login-modal__form-timer-wrapper">
+                <p class="login-modal__form-timer">Yangi kodni <span class="login-modal__form-timer-count">00:56</span> dan keyin qabul qilishingiz mumkin </p>
+              </div>
+              <a class="login-modal__form-anew-code login-modal__link" href="#">Kodni qayta yuborish</a>
+              <button class="login-modal__form-submit" type="submit">Kodni qabul qilish</button> <!-- BUTTON DISABLED BO'LMASA SHU KLASS QO'SHILADI "login-modal__form-submit--chipper"-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+</body>
+</html>

@@ -1,0 +1,10 @@
+.login-main {
+  padding-top: 40px;
+  background-image: image-set(
+    url(../img/login-bg.png) 1x,
+    url(../img/login-bg@2x.png) 2x,
+  );
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  background-size: cover;
+}

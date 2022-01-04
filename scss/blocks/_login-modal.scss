@@ -1,0 +1,180 @@
+.login-modal__dialog {
+  min-width: 416px;
+  padding: 48px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+  border-radius: 4px;
+}
+
+.login-modal__heading {
+  display: inline-block;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.login-modal__form-tel-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.login-modal__label-text {
+  margin-bottom: 6px;
+}
+
+.login-modal__form-tel {
+  padding: 10px 12px;
+  border: 1px solid $color-input-border;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-dark-grey;
+  }
+}
+
+.login-modal__form-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.login-modal__form-conditions-check:checked + .login-modal__form-custom-checkbox {
+
+  &::before {
+    display: block;
+  }
+}
+
+.login-modal__form-custom-checkbox {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  display: inline-block;
+  border: 2px solid $color-brand;
+  border-radius: 50%;
+
+  &::before {
+    display: none;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-brand;
+    border-radius: 50%;
+    content: '';
+  }
+}
+
+.login-modal__form-text {
+  margin: 0;
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+.login-modal__link {
+  font-weight: 500;
+  text-decoration: none;
+  color: $color-brand;
+}
+
+.login-modal__form-submit {
+  width: 100%;
+  padding: 14px 0 14px;
+  font-weight: 500;
+  font-size: 16px;
+  color: $color-light-grey;
+  background-color: $color-disabled;
+  border: none;
+  border-radius: 4px;
+}
+
+.login-modal__form-submit--chipper {
+  background-color: $color-brand;
+  color: $color-white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-hover-btn;
+  }
+}
+
+// SECOND MODAL
+.login-modal__top-content {
+  margin-bottom: 32px;
+}
+
+.login-modal__tel-content {
+  margin-top: 0;
+  margin-bottom: 3px;
+  color: $color-secondary;
+}
+
+.login-modal__telephone {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.login-modal__form-control-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.login-modal__form-control {
+  width: 36px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  background: #FFFFFF;
+  border: 1px solid $color-input-border;
+  border-radius: 4px;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.login-modal__form-timer-wrapper {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.login-modal__form-timer {
+  max-width: 233px;
+  display: inline-block;
+  margin: 0;
+  color: $color-secondary ;
+}
+
+.login-modal__form-timer-count {
+  font-weight: 500;
+}
+
+.login-modal__form-anew-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+
+  &::before {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    background-image: url(../img/icon/arrow-refresh.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: '';
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
