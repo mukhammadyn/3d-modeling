@@ -142,7 +142,7 @@
   }
 }
 
-.login-modal__form-timer-wrapper {
+.login-modal__form-new-code {
   margin-bottom: 32px;
   text-align: center;
 }
@@ -154,15 +154,19 @@
   color: $color-secondary ;
 }
 
+.login-modal__form-new-code--timeout
+.login-modal__form-timer {
+  display: none;
+}
+
 .login-modal__form-timer-count {
   font-weight: 500;
 }
 
 .login-modal__form-anew-code {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  margin-bottom: 32px;
 
   &::before {
     width: 20px;
@@ -177,4 +181,9 @@
   &:hover {
     opacity: 0.8;
   }
+}
+
+.login-modal__form-new-code--timeout
+.login-modal__form-anew-code {
+  display: inline-flex;
 }
