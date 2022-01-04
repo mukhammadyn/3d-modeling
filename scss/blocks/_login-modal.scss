@@ -44,32 +44,18 @@
 
 .login-modal__form-conditions-check:checked + .login-modal__form-custom-checkbox {
 
-  &::before {
-    display: block;
-  }
+  background-color: $color-brand;
+  
 }
 
 .login-modal__form-custom-checkbox {
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
   position: relative;
   display: inline-block;
-  border: 2px solid $color-brand;
+  box-shadow: 0px 0px 0px 2px $color-brand;
+  border: 2px solid $color-white;
   border-radius: 50%;
-
-  &::before {
-    display: none;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $color-brand;
-    border-radius: 50%;
-    content: '';
-  }
 }
 
 .login-modal__form-text {
