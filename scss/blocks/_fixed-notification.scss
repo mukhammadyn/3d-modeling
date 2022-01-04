@@ -13,8 +13,8 @@
   width: 480px;
   position: absolute;
   z-index: 5;
-  left: calc(50% + 210px);
   top: 0;
+  right: 0;
   background-color: $color-white;
 }
 
@@ -162,4 +162,19 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: $color-light-grey;
+}
+
+.fixed-notification__notifications::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+.fixed-notification__notifications::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+ 
+.fixed-notification__notifications::-webkit-scrollbar-thumb {
+  background-color: #E7E7E7;
+  border-radius: 10px;
 }
