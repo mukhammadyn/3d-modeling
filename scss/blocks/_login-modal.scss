@@ -79,12 +79,14 @@
   background-color: $color-disabled;
   border: none;
   border-radius: 4px;
+  pointer-events: none;
 }
 
 .login-modal__form-submit--chipper {
   background-color: $color-brand;
   color: $color-white;
   cursor: pointer;
+  pointer-events: visible;
 
   &:hover {
     background-color: $color-hover-btn;
